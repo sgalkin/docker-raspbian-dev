@@ -8,5 +8,7 @@ RUN apt-get update && \
             cmake cmake-data \
             ninja-build
 
-VOLUME /opt
-WORKDIR /opt
+VOLUME /opt/source
+VOLUME /opt/binary
+
+WORKDIR /opt/source
